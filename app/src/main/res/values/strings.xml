@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Up Beat</string>
+    <string name="enter_password" />
 </resources>
