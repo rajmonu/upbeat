@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         MyDbHandler db = new MyDbHandler(MainActivity.this);
 
-        MusicListAdapter.SignupActivity raj=new MusicListAdapter.SignupActivity();
+//        MusicListAdapter.SignupActivity raj=new MusicListAdapter.SignupActivity();
 
 
         recyclerView = findViewById(R.id.recycler_view);

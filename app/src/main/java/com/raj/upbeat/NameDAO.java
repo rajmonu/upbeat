@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 
 public class NameDAO {
     private SQLiteDatabase database;
-    private DatabaseHelper dbHelper;
+    private final DatabaseHelper dbHelper;
 
     public NameDAO(Context context) {
         dbHelper = new DatabaseHelper(context);
