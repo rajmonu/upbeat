@@ -24,10 +24,10 @@ public class SigninActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Login button clicked
-                String context;
-                Intent intent = new Intent(context, SignInActivity.class);
-                startActivity(intent);
-                finish();
+//                String context;
+//                Intent intent = new Intent(context, SignInActivity.class);
+//                startActivity(intent);
+//                finish();
             }
         });
 

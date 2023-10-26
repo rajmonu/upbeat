@@ -24,6 +24,8 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.raj.upbeat.data.MyDbHandler;
+
 import java.io.File;
 import java.util.ArrayList;
 
@@ -38,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        MyDbHandler db = new MyDbHandler(MainActivity.this);
+
+        MusicListAdapter.SignupActivity raj=new MusicListAdapter.SignupActivity();
+
 
         recyclerView = findViewById(R.id.recycler_view);
         noMusicTextView = findViewById(R.id.no_songs_text);

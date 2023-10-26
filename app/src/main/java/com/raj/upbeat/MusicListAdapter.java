@@ -5,13 +5,16 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 //import android.text.Layout;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -68,5 +71,31 @@ public class MusicListAdapter extends RecyclerView.Adapter<MusicListAdapter.View
             titleTextView=itemView.findViewById(R.id.music_title_text);
             iconImageView=itemView.findViewById(R.id.icon_view);
         }
+    }
+
+    public static class SignupActivity extends AppCompatActivity {
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_signup);
+
+            EditText firstnameEditText = findViewById(R.id.et_first_name);
+            EditText lastnameEditText = findViewById(R.id.et_last_name);
+            EditText emailEditText = findViewById(R.id.et_email);
+            EditText mobileEditText = findViewById(R.id.et_mobile);
+            EditText passwordEditText = findViewById(R.id.et_password);
+            Button signupButton = findViewById(R.id.btn_signup);
+            Button loginButton = findViewById(R.id.btn_signin);
+
+            loginButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    // Login button clicked
+                }
+            });
+
+        }
+
     }
 }
