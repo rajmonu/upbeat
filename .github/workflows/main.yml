@@ -2,7 +2,9 @@ name: Build and Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ master ]
+    branches: 
+      - main
+      - master
 
 jobs:
   build:
@@ -16,6 +18,9 @@ jobs:
         with:
           java-version: '17'
           distribution: 'adopt'
+
+      - name: Set up permissions
+        run: chmod +x ./gradlew
 
       - name: Build with Gradle
         run: ./gradlew build
